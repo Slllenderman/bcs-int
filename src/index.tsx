@@ -1,5 +1,5 @@
-import { Widget, GlobalSettings, WidgetTypography } from "./widget";
-import { IConferenceDateWidget } from "./widgets/confdate";
+import { WidgetProps, GlobalProps, WidgetTypography } from "./widget";
+import { WidgetsFactory } from "./widgets_factory";
 
-export { Widget, GlobalSettings, WidgetTypography }
-export { IConferenceDateWidget }
+export { WidgetProps, WidgetTypography, GlobalProps }
+export { WidgetsFactory }

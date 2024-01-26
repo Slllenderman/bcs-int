@@ -1,10 +1,10 @@
-import { Widget } from "../widget";
+import { WidgetProps } from "../widget";
 
 export enum ConferenceFromat {
     Online, Offline, OffOnline
 }
 
-export interface IConferenceDateWidget extends Widget {
+export interface IConferenceDateProps extends WidgetProps {
     date: Date;
     format: ConferenceFromat;
 }

@@ -1,7 +1,8 @@
-import { IConferenceDateWidget } from "./widgets/confdate"
-import { INavbar } from "./widgets/navbar";
+import { FC } from 'react'
+import { IConferenceDateProps} from "./widgets/confdate"
+import { INavbarProps } from "./widgets/navbar";
 
 export interface WidgetsFactory {
-    createConferenceDateWidget(): IConferenceDateWidget;
-    createNavbar(): INavbar;
+    createConferenceDateWidget(): FC<IConferenceDateProps> | undefined;
+    createNavbar(): FC<INavbarProps> | undefined;
 }

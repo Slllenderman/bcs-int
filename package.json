@@ -1,5 +1,5 @@
 {
-    "version": "0.0.5",
+    "version": "0.0.6",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
     "files": [
@@ -49,5 +49,14 @@
         "tsdx": "^0.14.1",
         "tslib": "^2.6.2",
         "typescript": "^3.9.10"
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "^2.1.0",
+        "@types/react": "^18.2.48",
+        "@types/react-dom": "^18.2.18",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-jsx": "^1.0.0",
+        "redux-typescript": "^1.2.1"
     }
 }
