@@ -1,3 +1,5 @@
-import { ConferenceFormat } from './confrence-date-widget'
+import { Widget, GlobalSettings, WidgetTypography } from "./widget";
+import { IConferenceDateWidget } from "./widgets/confdate";
 
-export { ConferenceFormat }
+export { Widget, GlobalSettings, WidgetTypography }
+export { IConferenceDateWidget }
