@@ -1,6 +1,6 @@
 import { WidgetProps } from "../widget";
 
-export interface INavbarProps extends WidgetProps {
+export interface NavbarProps extends WidgetProps {
     homeHref: String;
     organizersHref: String;
     programHref: String;
