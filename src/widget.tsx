@@ -1,5 +1,4 @@
-import { Slice } from "@reduxjs/toolkit";
-import { createSlice } from "@reduxjs/toolkit";
+
 
 export class WidgetTypography {
     font: String = "Times New Roman";
@@ -9,28 +8,20 @@ export class WidgetTypography {
     isItalic: Boolean = false;
 }
 
-export const GlobalProps = createSlice({
-    name: 'GlobalSettings',
-    initialState : {
-        language: "rus",
-        first_basecolor: 0,
-        second_basecolor: 0,
-        third_basecolor: 0,
-        first_typography: new WidgetTypography(),
-        second_typography: new WidgetTypography(),
-        third_typography: new WidgetTypography()
-    },
-    reducers: {
-        changeLanguage(state, action) {
-            state.language = action.payload;
-        }
-    }
-})
+export class GlobalParams {
+    language: String = "rus";
+    first_basecolor: Number = 0;
+    second_basecolor: Number = 0;
+    third_basecolor: Number = 0;
+    first_typography: WidgetTypography = new WidgetTypography();
+    second_typography: WidgetTypography = new WidgetTypography();
+    third_typography: WidgetTypography = new WidgetTypography();
+}
 
 export class WidgetProps {
     size: Number = 1;
     font_size: Number = 1;
     visibility: Boolean = true;
-    global_settings: Slice = GlobalProps
+    global: GlobalParams = new GlobalParams();
 }
 
