@@ -1,5 +1,4 @@
 
-
 export class WidgetTypography {
     font: String = "Times New Roman";
     size: Number = 14;
@@ -22,6 +21,5 @@ export class WidgetProps {
     size: Number = 1;
     font_size: Number = 1;
     visibility: Boolean = true;
-    global: GlobalParams = new GlobalParams();
 }
 
