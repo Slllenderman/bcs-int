@@ -1,8 +1,12 @@
 import { FC, PropsWithChildren } from 'react'
-import { ConferenceDateProps} from "./widgets/confdate"
-import { NavbarProps } from "./widgets/navbar";
+import * as props from "./widgets/index_components"
+
+type FCWC<Props> = FC<PropsWithChildren<Props>>;
 
 export interface WidgetsFactory {
-    getConferenceDateWidget(): FC<PropsWithChildren<ConferenceDateProps>>;
-    getNavbar(): FC<PropsWithChildren<NavbarProps>>;
+    getNavbar(): FCWC<props.NavbarProps>;
+    getConferenceShowcase(): FC;
+    getConferenceDateWidget(): FC<props.ConferenceDateProps>;
+    getConferenceInfoGrid(): FCWC<props.NavbarProps>;
+    getFooter(): FC;
 }

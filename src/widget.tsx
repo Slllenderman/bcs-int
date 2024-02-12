@@ -21,5 +21,6 @@ export class WidgetProps {
     size: Number = 1;
     font_size: Number = 1;
     visibility: Boolean = true;
+    className: String = "";
 }
 
