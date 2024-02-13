@@ -1,7 +1,7 @@
 import { FC, PropsWithChildren } from 'react'
-import * as props from "./widgets/index_components"
+import * as props from "./widgets_props"
 
-type FCWC<Props> = FC<PropsWithChildren<Props>>;
+export type FCWC<Props> = FC<PropsWithChildren<Props>>;
 
 export interface WidgetsFactory {
     getNavbar(): FCWC<props.NavbarProps>;

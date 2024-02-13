@@ -1,9 +1,5 @@
-import { WidgetProps, WidgetTypography } from "./widget";
-import { ConferenceDateProps, ConferenceFormat } from "./widgets/confdate";
-import { NavbarProps } from "./widgets/navbar";
+import { Widget, WidgetTypography, WidgetTheme } from "./widget";
 import { WidgetsFactory } from "./widgets_factory";
+import * as props from './widgets_props';
 
-export { WidgetProps, WidgetTypography }
-export { ConferenceDateProps, ConferenceFormat }
-export { NavbarProps }
-export { WidgetsFactory }
+export { Widget, WidgetTypography, WidgetTheme, WidgetsFactory, props };

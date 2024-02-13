@@ -1,4 +1,11 @@
 
+export class Widget {
+    size: Number = 1;
+    font_size: Number = 1;
+    visibility: Boolean = true;
+    className: String = "";
+}
+
 export class WidgetTypography {
     font: String = "Times New Roman";
     size: Number = 14;
@@ -7,7 +14,7 @@ export class WidgetTypography {
     isItalic: Boolean = false;
 }
 
-export class GlobalParams {
+export class WidgetTheme {
     language: String = "rus";
     first_basecolor: Number = 0;
     second_basecolor: Number = 0;
@@ -15,12 +22,5 @@ export class GlobalParams {
     first_typography: WidgetTypography = new WidgetTypography();
     second_typography: WidgetTypography = new WidgetTypography();
     third_typography: WidgetTypography = new WidgetTypography();
-}
-
-export class WidgetProps {
-    size: Number = 1;
-    font_size: Number = 1;
-    visibility: Boolean = true;
-    className: String = "";
 }
 
