@@ -13,7 +13,6 @@ export interface NavbarProps extends Widget {
 // Conference showcase ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // https://www.figma.com/file/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?type=design&node-id=207-1569&mode=design&t=DqHHb2fXLk5DJBlu-4
 
-
 export interface ConferenceShowcaseProps extends Widget {
     title: String;
     subtitle: String;
