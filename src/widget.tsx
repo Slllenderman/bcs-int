@@ -1,15 +1,15 @@
 
 export class Widget {
-    size: Number = 1;
-    font_size: Number = 1;
+    size: number = 1;
+    font_size: number = 1;
     visibility: Boolean = true;
     className: String = "";
 }
 
 export class WidgetTypography {
     font: String = "Times New Roman";
-    size: Number = 14;
-    color: Number = 0;
+    size: number = 14;
+    color: number = 0;
     isBold: Boolean = false;
     isItalic: Boolean = false;
 }
