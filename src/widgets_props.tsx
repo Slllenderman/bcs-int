@@ -26,8 +26,10 @@ export enum ConferenceFormat {
 }
 
 export interface ConferenceDateProps extends Widget {
-    date: Date;
+    start_date: Date;
+    end_date: Date;
     format: ConferenceFormat;
+    height: Number
 }
 
 // Conference info ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
