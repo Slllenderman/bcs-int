@@ -15,10 +15,10 @@ export class WidgetTypography {
 }
 
 export class WidgetTheme {
-    language: String = "rus";
-    first_basecolor: Number = 0;
-    second_basecolor: Number = 0;
-    third_basecolor: Number = 0;
+    language: "rus" | "eng" = "rus";
+    first_basecolor: String = "#000000";
+    second_basecolor: String = "#000000";
+    third_basecolor: String = "#000000";
     first_typography: WidgetTypography = new WidgetTypography();
     second_typography: WidgetTypography = new WidgetTypography();
     third_typography: WidgetTypography = new WidgetTypography();
