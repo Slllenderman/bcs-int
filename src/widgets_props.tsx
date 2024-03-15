@@ -29,7 +29,7 @@ export interface ConferenceDateProps extends Widget {
     start_date: Date;
     end_date: Date;
     format: ConferenceFormat;
-    height: Number
+    height: number
 }
 
 // Conference info ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
