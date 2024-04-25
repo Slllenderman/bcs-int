@@ -12,5 +12,5 @@ export interface WidgetsFactory {
     getNavbar(): FCWC<props.NavbarProps>;
     getConferenceShowcase(): FC<props.ConferenceShowcaseProps>;
     getConferenceDateWidget(): FC<props.ConferenceDateProps>;
-    getConferenceInfoGrid(): FCWC<PropsWithChildren<Widget>>;
+    getConferenceInfoGrid(): FCWC<Widget>;
 }
