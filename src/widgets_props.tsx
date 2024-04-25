@@ -16,6 +16,7 @@ export interface NavbarProps extends Widget {
 export interface ConferenceShowcaseProps extends Widget {
     title: String;
     subtitle: String;
+    participate_href: String;
 }
 
 // Conference date & format ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
