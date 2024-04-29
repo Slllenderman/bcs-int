@@ -1,5 +1,5 @@
 
-interface LinkProps {
+export interface LinkProps {
     to: string;
     children: string;
 }
