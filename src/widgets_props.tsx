@@ -64,3 +64,9 @@ export interface ConferenceUserCard extends Widget {
     initials: String,
     info: String
 }
+
+// Conference logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// https://www.figma.com/file/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?type=design&node-id=207-3386&mode=design&t=9u5PbBdiFiiOLEOR-4
+export interface ConferenceLogo extends Widget { 
+    img_size: number;
+}
