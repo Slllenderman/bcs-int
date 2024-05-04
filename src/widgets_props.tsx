@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import { Widget } from "./widget";
 
 // Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -77,8 +78,8 @@ export interface ConferenceLogo extends Widget {
 // Conference description
 // https://www.figma.com/file/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?type=design&node-id=207-1477&mode=design&t=UeMZnC2nIjhPJOEn-4
 export interface ConferenceDescription extends Widget {
-    about_text: string;
-    purpose_text: string;
-    topic_text: string;
-    participation_text: string;
+    about_text: string | ReactElement;
+    purpose_text: string | ReactElement;
+    topic_text: string | ReactElement;
+    participation_text: string | ReactElement;
 }
