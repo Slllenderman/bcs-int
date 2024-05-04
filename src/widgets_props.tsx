@@ -71,4 +71,5 @@ export interface ConferenceLogo extends Widget {
     img_size: number;
     img_src: string;
     title: string;
+    variant: string;
 }
