@@ -83,3 +83,12 @@ export interface ConferenceDescription extends Widget {
     topic_text: string | ReactElement;
     participation_text: string | ReactElement;
 }
+
+// Conference authorization
+// https://www.figma.com/file/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?type=design&node-id=434-12179&mode=design&t=ZqahOWHaOlCNEKCq-4=
+export interface Authorization extends Widget {
+    reg_href: string;
+    home_href: string;
+    auth_callback: (login: string, password: string) => void;
+}
+
