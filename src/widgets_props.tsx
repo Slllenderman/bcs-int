@@ -66,6 +66,23 @@ export interface ConferenceUserCard extends Widget {
     info: string;
 }
 
+// Artical card ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// https://www.figma.com/design/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?node-id=556-7196&t=vcofsvNVIUJ0Yi7f-4
+
+export enum ReviewState {
+    not_reviewed
+}
+
+export interface ArticalCard extends Widget {
+    title: string;
+    creation_date: Date;
+    last_update_date: Date;
+    review_state: ReviewState;
+}
+
+
+// Deprecated
+
 // Conference logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // https://www.figma.com/file/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?type=design&node-id=207-3386&mode=design&t=9u5PbBdiFiiOLEOR-4
 export interface ConferenceLogo extends Widget { 
@@ -84,11 +101,4 @@ export interface ConferenceDescription extends Widget {
     participation_text: string | ReactElement;
 }
 
-// Conference authorization
-// https://www.figma.com/file/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?type=design&node-id=434-12179&mode=design&t=ZqahOWHaOlCNEKCq-4=
-export interface Authorization extends Widget {
-    reg_href: string;
-    home_href: string;
-    auth_callback: (login: string, password: string) => void;
-}
 
