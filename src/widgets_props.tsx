@@ -1,4 +1,3 @@
-import { ReactElement } from "react";
 import { Widget } from "./widget";
 
 // Navbar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -14,14 +13,10 @@ export interface NavbarProps extends Widget {
 // Conference date & format ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // https://www.figma.com/file/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?type=design&node-id=207-1565&mode=design&t=9zceGAlzsGn9zRcY-4
 
-export enum ConferenceFormat {
-    Online, Offline, OffOnline
-}
-
 export interface ConferenceDateProps extends Widget {
     start_date: Date;
     end_date: Date;
-    format: ConferenceFormat;
+    format: "online" | "offline" | "both";
     height: number;
 }
 
@@ -69,36 +64,24 @@ export interface ConferenceUserCard extends Widget {
 // Artical card ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // https://www.figma.com/design/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?node-id=556-7196&t=vcofsvNVIUJ0Yi7f-4
 
-export enum ReviewState {
-    not_reviewed
-}
-
 export interface ArticalCard extends Widget {
     title: string;
     creation_date: Date;
     last_update_date: Date;
-    review_state: ReviewState;
+    review_state: "reviewed" | "not reviewed";
 }
 
+// Themes table ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// https://www.figma.com/design/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?node-id=434-5409&t=dEBoHKKYm33BL4BP-4
 
-// Deprecated
-
-// Conference logo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// https://www.figma.com/file/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?type=design&node-id=207-3386&mode=design&t=9u5PbBdiFiiOLEOR-4
-export interface ConferenceLogo extends Widget { 
-    img_size: number;
-    img_src: string;
-    title: string;
-    variant: string;
+export interface TopicsTable extends Widget {
+    topics: Array<string>;
 }
 
-// Conference description
-// https://www.figma.com/file/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?type=design&node-id=207-1477&mode=design&t=UeMZnC2nIjhPJOEn-4
-export interface ConferenceDescription extends Widget {
-    about_text: string | ReactElement;
-    purpose_text: string | ReactElement;
-    topic_text: string | ReactElement;
-    participation_text: string | ReactElement;
+// ListInfo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// https://www.figma.com/design/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?node-id=434-5902&t=dEBoHKKYm33BL4BP-4
+
+export interface InfoList extends Widget {
+    list: Array<string>;
+    variant: "main" | "accent";
 }
-
-
