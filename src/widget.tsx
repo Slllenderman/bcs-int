@@ -8,11 +8,12 @@ export class Widget {
 
 export const useWidget = (props: any): any => {
     const defWidget = new Widget()
-    if(typeof props.size === 'undefined') props.size = defWidget
-    if(typeof props.font_size === 'undefined') props.font_size = defWidget
-    if(typeof props.visibility === 'undefined') props.visibility = defWidget
-    if(typeof props.className === 'undefined') props.className = defWidget
-    return props
+    const ret = { ...props }
+    if(typeof ret.size === 'undefined') ret.size = defWidget
+    if(typeof ret.font_size === 'undefined') ret.font_size = defWidget
+    if(typeof ret.visibility === 'undefined') ret.visibility = defWidget
+    if(typeof ret.className === 'undefined') ret.className = defWidget
+    return ret
 }
 
 export class WidgetTypography {
