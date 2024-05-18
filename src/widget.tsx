@@ -1,9 +1,9 @@
 
 export class Widget {
-    size: number = 1;
-    font_size: number = 1;
-    visibility: Boolean = true;
-    className: String = "";
+    size?: number = 1;
+    font_size?: number = 1;
+    visibility?: Boolean = true;
+    className?: String = "";
 }
 
 export class WidgetTypography {
