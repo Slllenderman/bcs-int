@@ -1,4 +1,4 @@
-import { Widget, WidgetTypography, WidgetTheme } from "./widget";
+import { Widget, WidgetTypography, WidgetTheme, useWidget } from "./widget";
 import { WidgetsFactory, FCWC } from "./widgets_factory";
 import * as props from './widgets_props';
 
@@ -8,5 +8,5 @@ const defthemes = { ...new WidgetTheme() }
 export { 
     Widget, WidgetTypography, WidgetTheme, 
     WidgetsFactory, FCWC, 
-    props, defparams, defthemes
+    props, defparams, defthemes, useWidget
 };

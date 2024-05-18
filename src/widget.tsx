@@ -6,6 +6,15 @@ export class Widget {
     className?: String = "";
 }
 
+export const useWidget = (props: any): any => {
+    const defWidget = new Widget()
+    if(typeof props.size === 'undefined') props.size = defWidget
+    if(typeof props.font_size === 'undefined') props.font_size = defWidget
+    if(typeof props.visibility === 'undefined') props.visibility = defWidget
+    if(typeof props.className === 'undefined') props.className = defWidget
+    return props
+}
+
 export class WidgetTypography {
     font: String = "Times New Roman";
     size: number = 14;
