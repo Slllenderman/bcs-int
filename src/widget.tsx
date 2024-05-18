@@ -9,10 +9,10 @@ export class Widget {
 export const useWidget = (props: any): any => {
     const defWidget = new Widget()
     const ret = { ...props }
-    if(typeof ret.size === 'undefined') ret.size = defWidget
-    if(typeof ret.font_size === 'undefined') ret.font_size = defWidget
-    if(typeof ret.visibility === 'undefined') ret.visibility = defWidget
-    if(typeof ret.className === 'undefined') ret.className = defWidget
+    if(typeof ret.size === 'undefined') ret.size = defWidget.size
+    if(typeof ret.font_size === 'undefined') ret.font_size = defWidget.font_size
+    if(typeof ret.visibility === 'undefined') ret.visibility = defWidget.visibility
+    if(typeof ret.className === 'undefined') ret.className = defWidget.className
     return ret
 }
 

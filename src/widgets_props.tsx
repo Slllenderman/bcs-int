@@ -8,6 +8,8 @@ export interface NavbarProps extends Widget {
     home_href: string;
     logo_name: string;
     logo_img: string;
+    is_authenticated: boolean;
+    signin_callback: () => void;
 }
 
 // https://www.figma.com/file/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?type=design&node-id=207-1565&mode=design&t=9zceGAlzsGn9zRcY-4
