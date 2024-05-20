@@ -1,3 +1,4 @@
+import { createContext, useContext } from "react";
 
 export class Widget {
     width?: number = 1;
@@ -35,3 +36,20 @@ export class WidgetTheme {
     third_typography: WidgetTypography = new WidgetTypography();
 }
 
+
+const ThemeContext = createContext({})
+
+export const useTheme = (props: any): any => {
+    const { theme, setTheme }: any = useContext(ThemeContext)
+    if(typeof props.theme !== 'undefined'){
+        let new_theme = theme
+        if(typeof props.theme.first_basecolor !== 'undefined')
+            new_theme.palette.primary.main = props.theme.first_basecolor
+        if(typeof props.theme.second_basecolor !== 'undefined')
+            new_theme.palette.primary.dark = props.theme.second_basecolor
+        if(typeof props.theme.third_basecolor !== 'undefined')
+            new_theme.palette.primary.light = props.theme.third_basecolor
+        setTheme(new_theme)
+    }
+    return theme
+} 
