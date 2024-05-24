@@ -65,6 +65,7 @@ export interface ArticalCard extends Widget {
 export interface Artical extends Widget {
     title: string;
     topic: string;
+    topics: Array<string>;
     pdf_src: string;
     word_src: string;
     dop_src: string;
