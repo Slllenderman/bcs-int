@@ -51,18 +51,9 @@ export interface ConferenceUserCard extends Widget {
     info: string;
 }
 
-// https://www.figma.com/design/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?node-id=556-7196&t=vcofsvNVIUJ0Yi7f-4
-
-export interface ArticalCard extends Widget {
-    title: string;
-    creation_date: Date;
-    last_update_date: Date;
-    review_state: "reviewed" | "not reviewed";
-}
-
 // https://www.figma.com/design/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?node-id=434-12693&t=gN5EE4xQshqpQN5H-4
 
-export interface Artical extends Widget {
+export interface Article extends Widget {
     title: string;
     topic: string;
     topics: Array<string>;
@@ -73,6 +64,16 @@ export interface Artical extends Widget {
     concexp_src: string;
     concopen_src: string;
     back_href: string;
+}
+
+// https://www.figma.com/design/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?node-id=556-7196&t=vcofsvNVIUJ0Yi7f-4
+
+export interface ArticleCard extends Widget {
+    title: string;
+    creation_date: Date;
+    last_update_date: Date;
+    review_state: "reviewed" | "not reviewed";
+    article: Article;
 }
 
 // https://www.figma.com/design/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?node-id=434-5409&t=dEBoHKKYm33BL4BP-4
