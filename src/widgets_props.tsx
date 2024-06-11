@@ -56,11 +56,9 @@ export interface ConferenceUserCard extends Widget {
 export interface ArticleForm extends Widget {
     title?: string;
     description?: string;
-    topic?: string;
-    topics: Array<string>;
     back_href: string;
-    files?: File[];
-    submit_callback: (title: string, description: string, topic: string, priority: number, files: File[]) => void;
+    files?: Array<any>;
+    submit_callback: (title: string, description: string, priority: number, files: Array<any>) => void;
 }
 
 // https://www.figma.com/design/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?node-id=556-7196&t=vcofsvNVIUJ0Yi7f-4
@@ -72,6 +70,7 @@ export interface ArticleCard extends Widget {
     last_update_date: Date;
     review_state: "reviewed" | "not reviewed";
     update_href: string;
+    files?: Array<any>;
 }
 
 // https://www.figma.com/design/ySvtPDNcNYmCHJlhLACAFi/%F0%9F%A7%A0-%D0%A1%D0%B0%D0%B9%D1%82-%D0%98%D0%98%D0%90%D0%A1%D0%A3?node-id=434-5409&t=dEBoHKKYm33BL4BP-4
